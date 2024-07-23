@@ -1,0 +1,57 @@
+.about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    position: relative;
+    border-radius: 100px;
+
+    & .background {
+        width: 100%;
+        height: 100%;
+        border-radius: 46px;
+        background-color: #4b4843;
+        padding: 200px 3% 0px 3%;
+
+        & .content {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            position: relative;
+
+            & img{
+                max-width: 1200px;
+                width: 100%;
+                aspect-ratio: 14/10;
+            }
+
+            & h2 {
+                height: fit-content;
+                font-size: 6rem;
+                font-weight: 100;
+                position: sticky;
+                top: 200px;
+            }
+
+            & .aboutText {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                padding-top: 50px;
+                width: 60%;
+
+                & h3 {
+                    font-size: 2rem;
+                    font-weight: 100;
+                }
+
+                & p {
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                    letter-spacing: 0.12rem;
+                }
+            }
+        }
+    }
+}
